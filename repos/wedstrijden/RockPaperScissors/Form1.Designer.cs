@@ -52,16 +52,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Player";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radioButtonRock
             // 
             this.radioButtonRock.AutoSize = true;
-            this.radioButtonRock.Location = new System.Drawing.Point(6, 65);
+            this.radioButtonRock.Location = new System.Drawing.Point(6, 20);
             this.radioButtonRock.Name = "radioButtonRock";
             this.radioButtonRock.Size = new System.Drawing.Size(51, 17);
             this.radioButtonRock.TabIndex = 2;
-            this.radioButtonRock.TabStop = true;
             this.radioButtonRock.Text = "Rock";
             this.radioButtonRock.UseVisualStyleBackColor = true;
             this.radioButtonRock.Click += new System.EventHandler(this.radioButtonRock_Click);
@@ -81,13 +79,15 @@
             // radioButtonPaper
             // 
             this.radioButtonPaper.AutoSize = true;
-            this.radioButtonPaper.Location = new System.Drawing.Point(6, 19);
+            this.radioButtonPaper.Checked = true;
+            this.radioButtonPaper.Location = new System.Drawing.Point(6, 65);
             this.radioButtonPaper.Name = "radioButtonPaper";
             this.radioButtonPaper.Size = new System.Drawing.Size(53, 17);
             this.radioButtonPaper.TabIndex = 0;
             this.radioButtonPaper.TabStop = true;
             this.radioButtonPaper.Text = "Paper";
             this.radioButtonPaper.UseVisualStyleBackColor = true;
+            this.radioButtonPaper.CheckedChanged += new System.EventHandler(this.radioButtonPaper_CheckedChanged);
             this.radioButtonPaper.Click += new System.EventHandler(this.radioButtonPaper_Click);
             // 
             // groupBox2
@@ -100,7 +100,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Enemy";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // textBoxEnemyChoice
             // 
